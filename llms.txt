@@ -1,0 +1,22 @@
+# NYAANO / न्यानो
+
+NYAANO is a Nepali dairy brand being developed around two separate products: Cow Ghee and Buffalo Ghee.
+
+## Core proposition
+- Familiar local-style taste
+- Cow and buffalo are clearly separate product identities
+- Batch accountability and quality-control standards
+- Tamper-evident packaged format
+- Fair-price philosophy: an affordable trust premium, not luxury wellness pricing
+- Brand philosophy: grow with farmers, manufacturers, retailers and customers rather than attacking competitors
+
+## Claims policy
+NYAANO should only publish quality, source, process, nutrition, organic, A2, grass-fed, bilona, health or superiority claims after they are verified for the actual commercial product.
+
+## Canonical pages
+- /cow-ghee.html
+- /buffalo-ghee.html
+- /quality.html
+- /story.html
+- /b2b.html
+- /faq.html
