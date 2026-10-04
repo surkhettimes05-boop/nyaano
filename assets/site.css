@@ -181,3 +181,59 @@
   .has-mobile-action-bar{padding-bottom:58px}
   .has-mobile-action-bar .whatsapp-float{display:none}
 }
+
+/* === NYAANO product authority + retailer value pass (2026-10-04) === */
+.product-compare{display:grid;grid-template-columns:.75fr 1fr 1fr 1.15fr;border:1px solid var(--line);margin-top:1rem;background:#fffaf0}
+.product-compare>div{padding:1.25rem;border-right:1px solid var(--line);display:grid;align-content:center;gap:.45rem;min-height:118px}
+.product-compare>div:last-child{border-right:0}
+.product-compare strong{font-family:var(--serif);font-size:1.25rem;font-weight:600}
+.product-compare span,.product-compare small{font-size:.78rem;line-height:1.4}
+.compare-label{background:#0f342a;color:#fff}
+.compare-label span{color:#d8ded9}
+.compare-chip{display:inline-flex!important;width:max-content;padding:.3rem .5rem;border:1px solid currentColor;font-weight:800}
+.cow-chip{color:#805400}.buffalo-chip{color:#7d3927}
+.difference-section{background:#fffdf7}
+.difference-grid{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line)}
+.difference-card{padding:2rem;border-right:1px solid var(--line);min-height:310px}
+.difference-card:last-child{border-right:0}
+.difference-icon{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:#0f342a;color:#fff;font-family:var(--serif);font-size:1.1rem}
+.difference-card h3{font-family:var(--serif);font-size:2rem;font-weight:400;margin:2rem 0 .8rem}
+.difference-card p{line-height:1.6}
+.ghee-guide{background:#efe5d1}
+.guide-intro{display:grid;grid-template-columns:1fr 1fr;gap:6vw;align-items:end;margin-bottom:3rem}
+.guide-intro h2{font-family:var(--serif);font-size:clamp(2.6rem,5.2vw,5.4rem);font-weight:400;line-height:.96;letter-spacing:-.04em;margin:0}
+.guide-intro>p:last-child{font-size:1.05rem;line-height:1.7;margin:0}
+.ghee-checklist{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.ghee-checklist article{padding:2rem;border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:rgba(255,250,240,.5);min-height:260px}
+.ghee-checklist b{font-family:var(--serif);font-size:1.6rem;color:#a56a00}
+.ghee-checklist h3{font-family:var(--serif);font-size:1.8rem;font-weight:400;margin:1rem 0 .6rem}
+.ghee-checklist p{line-height:1.6}
+.guide-note{margin:1.5rem 0 0;padding:1.15rem 1.35rem;border-left:3px solid #a56a00;background:#fffaf0;max-width:900px}
+.why-stock{background:#f0c463}
+.retailer-value-grid{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid rgba(16,47,40,.3);margin-bottom:1rem}
+.retailer-value-grid article{padding:2rem;border-right:1px solid rgba(16,47,40,.3);min-height:300px}
+.retailer-value-grid article:last-child{border-right:0}
+.retailer-value-grid span{font-family:var(--serif);font-size:1.7rem;color:#765000}
+.retailer-value-grid h3{font-family:var(--serif);font-size:2rem;font-weight:400;margin:1.4rem 0 .7rem}
+.retailer-value-grid p{line-height:1.6}
+.retailer-promise{display:flex;gap:.7rem;flex-wrap:wrap;align-items:center;margin:1rem 0 1.5rem;padding:1rem 0;border-top:1px solid rgba(16,47,40,.25);border-bottom:1px solid rgba(16,47,40,.25)}
+.retailer-promise span{font-family:var(--serif);font-size:1.15rem}
+.trade-scorecard{display:grid;grid-template-columns:repeat(4,1fr);margin-top:1rem;border:1px solid var(--line)}
+.trade-scorecard>div{padding:1.5rem;border-right:1px solid var(--line);display:grid;gap:.45rem}
+.trade-scorecard>div:last-child{border-right:0}
+.trade-scorecard strong{font-family:var(--serif);font-size:2.6rem;color:#a56a00}
+.trade-scorecard span{font-size:.82rem;font-weight:700}
+@media(max-width:980px){
+  .product-compare,.difference-grid,.retailer-value-grid,.trade-scorecard{grid-template-columns:1fr 1fr}
+  .product-compare>div:nth-child(2),.difference-card:nth-child(2),.retailer-value-grid article:nth-child(2),.trade-scorecard>div:nth-child(2){border-right:0}
+  .product-compare>div,.difference-card,.retailer-value-grid article,.trade-scorecard>div{border-bottom:1px solid var(--line)}
+  .guide-intro{grid-template-columns:1fr}
+  .ghee-checklist{grid-template-columns:1fr 1fr}
+}
+@media(max-width:620px){
+  .product-compare,.difference-grid,.retailer-value-grid,.trade-scorecard,.ghee-checklist{grid-template-columns:1fr}
+  .product-compare>div,.product-compare>div:nth-child(2),.difference-card,.difference-card:nth-child(2),.retailer-value-grid article,.retailer-value-grid article:nth-child(2),.trade-scorecard>div,.trade-scorecard>div:nth-child(2){border-right:0}
+  .difference-card,.retailer-value-grid article,.ghee-checklist article{min-height:0;padding:1.4rem}
+  .product-compare>div{min-height:0}
+  .guide-intro{gap:1.5rem}
+}
