@@ -44,26 +44,29 @@
 </header>
 
 <main id="main">
-<section class="premium-hero" data-premium-hero>
-  <div class="premium-copy reveal">
-    <p class="premium-kicker">NYAANO / न्यानो · घरको स्वाद, जिम्मेवार प्याक</p>
-    <h1><span data-premium-title>गाईको घ्यू।</span><em>घर जस्तै न्यानो।</em></h1>
-    <p class="premium-lead">परिचित नेपाली स्वादलाई स्पष्ट product identity, batch accountability र sealed pack सँग जोड्ने हाम्रो प्रयास।</p>
-    <p class="premium-sub" data-premium-en lang="en-NP">Cow Ghee · familiar, lighter everyday profile</p>
-    <div class="variant-switch" aria-label="Choose ghee">
-      <button type="button" data-variant="cow" aria-pressed="true">गाईको घ्यू · Cow</button>
-      <button type="button" data-variant="buffalo" aria-pressed="false">भैंसीको घ्यू · Buffalo</button>
+<section class="product-world world-cow" data-premium-hero data-world="cow">
+  <div class="world-word" data-world-word aria-hidden="true">COW</div>
+  <div class="world-grain" aria-hidden="true"></div>
+  <div class="world-shape shape-one" aria-hidden="true"></div>
+  <div class="world-shape shape-two" aria-hidden="true"></div>
+  <div class="world-copy">
+    <p class="world-kicker" data-world-kicker>NYAANO · गाईको घ्यू</p>
+    <h1><span data-premium-title>घरको स्वाद।</span><em data-world-em>न्यानो अनुभूति।</em></h1>
+    <p class="world-description" data-world-description>दैनिक नेपाली खानाका लागि छुट्टै पहिचान भएको Cow Ghee.</p>
+    <p class="world-profile" data-premium-en>Cow Ghee · familiar, lighter everyday profile</p>
+    <div class="world-controls" role="group" aria-label="Choose NYAANO product">
+      <button type="button" data-variant="cow" aria-pressed="true"><b>01</b><span>गाईको घ्यू<small>Cow Ghee</small></span></button>
+      <button type="button" data-variant="buffalo" aria-pressed="false"><b>02</b><span>भैंसीको घ्यू<small>Buffalo Ghee</small></span></button>
     </div>
-    <div class="hero-actions">
-      <a class="btn btn-dark" href="#products">उत्पादन हेर्नुहोस् · Explore</a>
-      <a class="btn btn-whatsapp" data-wa-message="Namaste NYAANO, I want to know where I can buy NYAANO ghee. My location is: " href="https://wa.me/9779822403262" target="_blank" rel="noopener">कहाँ पाइन्छ?</a>
-    </div>
-    <div class="premium-trust"><span>Cow ≠ Buffalo</span><span>Batch coded</span><span>Correct-weight standard</span><span>Tamper sealed</span></div>
+    <div class="world-actions"><a class="btn btn-dark" data-world-link href="cow-ghee.html">यो उत्पादन हेर्नुहोस् →</a><a class="world-text-link" href="#where-to-buy">कहाँ पाइन्छ?</a></div>
   </div>
-  <div class="premium-visual reveal">
-    <div class="premium-orbit" aria-hidden="true"></div>
-    <img class="premium-product" data-premium-product src="assets/cow-ghee-500.webp" width="1200" height="1200" alt="NYAANO Cow Ghee 500 ml" fetchpriority="high">
+  <div class="world-stage">
+    <div class="world-halo" aria-hidden="true"></div>
+    <span class="world-note note-a" data-note-a>500 ml</span><span class="world-note note-b" data-note-b>BATCH CODED</span>
+    <img class="world-product" data-premium-product src="assets/cow-ghee-500.webp" width="1200" height="1200" alt="NYAANO Cow Ghee 500 ml" fetchpriority="high">
+    <div class="world-floor" aria-hidden="true"></div>
   </div>
+  <div class="world-index"><span data-world-index>01</span><i></i><span>02</span></div>
 </section>
 <section class="heritage-strip" aria-label="NYAANO brand principles">
   <div><strong>न्यानो भनेको घरको अनुभूति।</strong><span>Not manufactured nostalgia—familiar food, presented with modern accountability.</span></div>
