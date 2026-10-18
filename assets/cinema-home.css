@@ -159,3 +159,40 @@ body{overflow-x:hidden}.site-header{position:relative;z-index:80}.cinema-hero{--
   .mobile-action-bar a{min-height:42px;padding:.28rem .25rem;font-size:.62rem}
   .has-mobile-action-bar{padding-bottom:42px}
 }
+
+/* === GO release gate: calm, bounded mobile hero === */
+.scene-a11y{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:620px){
+  body.has-mobile-action-bar .launch-status{min-height:30px;height:30px;display:flex;flex-wrap:nowrap;overflow:hidden;padding:.35rem 4vw;font-size:.56rem;white-space:nowrap}
+  body.has-mobile-action-bar .launch-status span+span{display:none}
+  body.has-mobile-action-bar .site-header{height:56px;padding:0 4vw}
+  body.has-mobile-action-bar .brand-mark{width:24px;height:29px;scale:.82}
+  body.has-mobile-action-bar .brand-type strong{font-size:1.05rem}
+  body.has-mobile-action-bar .brand-type em{font-size:.7rem;margin-top:.25rem}
+  body.has-mobile-action-bar .menu-toggle{width:36px;height:36px}
+  body.has-mobile-action-bar .nav{inset:86px 0 auto}
+  .cinema-hero{height:calc(100svh - 86px - 42px);min-height:540px;max-height:650px;grid-template-rows:auto minmax(0,1fr) auto}
+  .cinema-copy{padding:.8rem 5vw 0}
+  .cinema-overline{font-size:.46rem;margin-bottom:.32rem}
+  .cinema-copy h1{font-size:clamp(2rem,9.5vw,2.8rem);line-height:.88;max-width:92%}
+  .cinema-description{font-size:.63rem;line-height:1.34;max-width:72%;margin:.42rem 0 .25rem;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .cinema-cta{font-size:.58rem;padding:.28rem 0}
+  .cinema-stage{min-height:0;height:100%;margin:0}
+  .cinema-pack{height:min(34svh,265px);max-width:60vw}
+  .cinema-bg-word{top:58%;font-size:26vw}
+  .cinema-hero[data-product^="buffalo"] .cinema-bg-word{font-size:15.5vw}
+  .cinema-sun{width:min(61vw,270px)}
+  .cinema-animal{width:13%;right:13%;top:10%}
+  .prop-spoon{left:8%;top:31%;scale:.5}.prop-drop{right:9%;bottom:23%;scale:.72}.prop-grain{left:12%;bottom:17%;scale:.48}.prop-bowl{right:9%;top:25%;scale:.46}
+  .cinema-selector{width:92%;margin:0 auto .55rem}
+  .cinema-options button{padding:.38rem .08rem}
+  .cinema-options button b{font-size:.52rem}.cinema-options button small{font-size:.42rem}
+  .cinema-arrow{width:30px;height:30px;flex-basis:30px}
+  .mobile-action-bar a{min-height:42px}
+}
+@media(max-width:390px){
+  .cinema-hero{height:calc(100svh - 86px - 42px);min-height:520px}
+  .cinema-copy h1{font-size:1.95rem}
+  .cinema-description{max-width:78%;font-size:.61rem}
+  .cinema-pack{height:min(32svh,245px);max-width:58vw}
+}
