@@ -9,7 +9,7 @@
 <meta name="theme-color" content="#0f342a">
 <link rel="canonical" href="https://nyaano.vercel.app/">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/site.css">\n<link rel="stylesheet" href="assets/premium-home.css">
 <meta property="og:type" content="website"><meta property="og:site_name" content="NYAANO">
 <meta property="og:title" content="NYAANO न्यानो | गाईको घ्यू र भैंसीको घ्यू"><meta property="og:description" content="छुट्टाछुट्टै गाईको घ्यू र भैंसीको घ्यू। स्पष्ट पहिचान, 500 ml र 1 L प्याक र जिम्मेवार quality standard.">
 <meta property="og:image" content="https://nyaano.vercel.app/assets/home-hero-nyaano-ghee-v2.webp">
@@ -44,33 +44,32 @@
 </header>
 
 <main id="main">
-<section class="sales-hero">
-  <div class="sales-hero-copy reveal">
-    <p class="eyebrow">NYAANO / न्यानो · नेपालका घरका लागि घ्यू</p>
-    <h1>गाईको घ्यू।<br>भैंसीको घ्यू।<br><i>स्पष्ट रूपमा छुट्टाछुट्टै।</i></h1>
-    <p class="hero-en" lang="en-NP">Cow ghee. Buffalo ghee. Clearly separate.</p>
-    <p class="ne-lead">घरको परिचित स्वाद चाहने परिवारका लागि—तर प्याकमा के छ, कति छ र कुन batch हो भन्ने कुरा स्पष्ट हुने गरी।</p>
-    <p class="lead compact" lang="en-NP">Familiar everyday ghee for families who want local-style taste with clearer packaged-product accountability.</p>
-
+<section class="premium-hero" data-premium-hero>
+  <div class="premium-copy reveal">
+    <p class="premium-kicker">NYAANO / न्यानो · घरको स्वाद, जिम्मेवार प्याक</p>
+    <h1><span data-premium-title>गाईको घ्यू।</span><em>घर जस्तै न्यानो।</em></h1>
+    <p class="premium-lead">परिचित नेपाली स्वादलाई स्पष्ट product identity, batch accountability र sealed pack सँग जोड्ने हाम्रो प्रयास।</p>
+    <p class="premium-sub" data-premium-en lang="en-NP">Cow Ghee · familiar, lighter everyday profile</p>
+    <div class="variant-switch" aria-label="Choose ghee">
+      <button type="button" data-variant="cow" aria-pressed="true">गाईको घ्यू · Cow</button>
+      <button type="button" data-variant="buffalo" aria-pressed="false">भैंसीको घ्यू · Buffalo</button>
+    </div>
     <div class="hero-actions">
-      <a class="btn btn-dark" href="#where-to-buy">कहाँ पाइन्छ? · Where to buy</a>
-      <a class="btn btn-whatsapp" data-wa-message="Namaste NYAANO, I want to know where I can buy NYAANO Cow/Buffalo Ghee. My location is: " href="https://wa.me/9779822403262" target="_blank" rel="noopener">WhatsApp मा सोध्नुहोस्</a>
-      <a class="btn btn-line" href="b2b.html#partner">स्टक राख्नुहोस् · Stock NYAANO</a>
+      <a class="btn btn-dark" href="#products">उत्पादन हेर्नुहोस् · Explore</a>
+      <a class="btn btn-whatsapp" data-wa-message="Namaste NYAANO, I want to know where I can buy NYAANO ghee. My location is: " href="https://wa.me/9779822403262" target="_blank" rel="noopener">कहाँ पाइन्छ?</a>
     </div>
-
-    <div class="hero-facts" aria-label="NYAANO quick facts">
-      <div><strong>के हो?</strong><span>छुट्टाछुट्टै Cow Ghee र Buffalo Ghee</span></div>
-      <div><strong>कसका लागि?</strong><span>दैनिक खाना पकाउने नेपाली परिवार</span></div>
-      <div><strong>किन विश्वास?</strong><span>No mixed ghee · Batch code · Correct-weight standard</span></div>
-      <div><strong>साइज / मूल्य?</strong><span>500 ml र 1 L · Target: comparable trusted local ghee भन्दा करिब रु 100–150 premium · Final MRP before sale</span></div>
-      <div><strong>कसरी किन्ने?</strong><span>Confirmed stockists + WhatsApp availability</span></div>
-    </div>
+    <div class="premium-trust"><span>Cow ≠ Buffalo</span><span>Batch coded</span><span>Correct-weight standard</span><span>Tamper sealed</span></div>
   </div>
-
-  <figure class="sales-hero-media reveal">
-    <img src="assets/home-hero-nyaano-ghee-v2.webp" width="1536" height="1024" alt="NYAANO Cow Ghee and Buffalo Ghee jars" fetchpriority="high">
-    <figcaption>NYAANO Cow Ghee · गाईको घ्यू &nbsp; | &nbsp; NYAANO Buffalo Ghee · भैंसीको घ्यू</figcaption>
-  </figure>
+  <div class="premium-visual reveal">
+    <div class="premium-orbit" aria-hidden="true"></div>
+    <img class="premium-product" data-premium-product src="assets/cow-ghee-500.webp" width="1200" height="1200" alt="NYAANO Cow Ghee 500 ml" fetchpriority="high">
+  </div>
+</section>
+<section class="heritage-strip" aria-label="NYAANO brand principles">
+  <div><strong>न्यानो भनेको घरको अनुभूति।</strong><span>Not manufactured nostalgia—familiar food, presented with modern accountability.</span></div>
+  <div><strong>स्पष्ट पहिचान</strong><span>गाई भने गाई। भैंसी भने भैंसी।</span></div>
+  <div><strong>जाँच्न मिल्ने कुरा</strong><span>Batch, quantity and seal before vague purity claims.</span></div>
+  <div><strong>दैनिक प्रयोग</strong><span>दाल–भातदेखि रोटी र मिठाईसम्म।</span></div>
 </section>
 
 <section class="answer-section section" aria-labelledby="five-answers">
@@ -263,5 +262,5 @@
   <div class="footer-bottom"><span>© 2026 NYAANO / न्यानो.</span><span>स्पष्ट उत्पादन। जिम्मेवार मापदण्ड।</span></div>
 </footer>
 <script src="assets/site.js" defer></script>
-</body>
+<script src="assets/premium-home.js" defer></script>\n</body>
 </html>
