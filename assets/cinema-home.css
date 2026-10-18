@@ -92,3 +92,70 @@ body{overflow-x:hidden}.site-header{position:relative;z-index:80}.cinema-hero{--
   .mobile-action-bar a{min-height:46px;padding:.35rem .3rem;font-size:.66rem;line-height:1.15}
   .has-mobile-action-bar{padding-bottom:46px}
 }
+
+/* === Homepage V2: mobile-first scene system === */
+@media(max-width:768px){
+  .cinema-hero{height:calc(100svh - 112px);min-height:610px;max-height:760px;padding:0;display:grid;grid-template-rows:auto 1fr auto;overflow:hidden}
+  .cinema-copy{position:relative;inset:auto;translate:none;width:auto;padding:1.15rem 5vw 0;z-index:20}
+  .cinema-overline{font-size:.5rem;letter-spacing:.14em;margin:0 0 .45rem}
+  .cinema-copy h1{font-size:clamp(2.25rem,10.5vw,3.8rem);line-height:.86;max-width:94%;margin:0}
+  .cinema-description{font-size:.7rem;line-height:1.38;max-width:76%;margin:.55rem 0 .35rem}
+  .cinema-cta{font-size:.62rem;padding:.35rem 0}
+  .cinema-stage{position:relative;inset:auto;translate:none;width:100%;height:auto;min-height:0;margin:0;align-self:stretch}
+  .cinema-pack{width:auto;height:min(39svh,330px);max-width:66vw;max-height:none;object-fit:contain;object-position:center;filter:drop-shadow(0 22px 18px rgba(47,25,13,.25))}
+  .cinema-bg-word{left:50%;top:59%;translate:-50% -50%;font-size:30vw;max-width:none;overflow:visible;line-height:.7}
+  .cinema-hero[data-product^="buffalo"] .cinema-bg-word{font-size:17.5vw;letter-spacing:-.09em}
+  .cinema-sun{width:min(67vw,310px)}
+  .cinema-animal{width:15%;right:11%;top:12%;max-height:80px}
+  .prop-spoon{left:5%;top:30%;width:86px;scale:.62}
+  .prop-drop{right:7%;bottom:24%;width:48px;height:48px;font-size:1rem;scale:.9}
+  .prop-grain{left:10%;bottom:18%;scale:.58}
+  .prop-bowl{right:7%;top:25%;scale:.55}
+  .cinema-shadow{bottom:8%;width:42%;height:5%}
+  .cinema-context{display:none}
+  .cinema-selector{position:relative;left:auto;bottom:auto;translate:none;width:94%;margin:0 auto .7rem;gap:.22rem;z-index:30}
+  .cinema-options{flex:1;min-width:0}
+  .cinema-options button{min-width:0;flex:1;width:auto;padding:.45rem .12rem;text-align:center;display:block}
+  .cinema-options button span{display:none}
+  .cinema-options button b{display:block;font-size:.55rem;white-space:nowrap}
+  .cinema-options button small{display:block;font-size:.45rem;white-space:nowrap;margin-top:.08rem}
+  .cinema-options button[aria-current=true]{transform:translateY(-2px)}
+  .cinema-arrow{flex:0 0 32px;width:32px;height:32px}
+  .cinema-swipe{display:none}
+}
+@media(max-width:430px){
+  .cinema-hero{height:calc(100svh - 108px);min-height:590px;max-height:700px}
+  .cinema-copy{padding-top:.9rem}
+  .cinema-copy h1{font-size:clamp(2.1rem,10.8vw,3rem)}
+  .cinema-description{max-width:82%;font-size:.66rem}
+  .cinema-pack{height:min(38svh,295px);max-width:64vw}
+  .cinema-bg-word{top:60%;font-size:28vw}
+  .cinema-hero[data-product^="buffalo"] .cinema-bg-word{font-size:16.7vw}
+}
+@media(max-width:390px){
+  .cinema-copy h1{font-size:2.12rem}
+  .cinema-description{font-size:.64rem;max-width:86%}
+  .cinema-pack{height:min(36svh,270px);max-width:62vw}
+  .cinema-options button b{font-size:.52rem}.cinema-options button small{font-size:.42rem}
+}
+/* Compact editorial bridge: identity first, imagery second. */
+@media(max-width:600px){
+  .collection-story{padding-top:3.6rem;padding-bottom:3.6rem}
+  .collection-intro{gap:1rem;margin-bottom:2rem}
+  .collection-intro h2{font-size:clamp(2.35rem,10.8vw,3.5rem);line-height:.9}
+  .collection-intro>p:last-child{font-size:.84rem;line-height:1.5}
+  .collection-scenes{gap:.75rem}
+  .collection-panel{height:310px;padding:1.2rem}
+  .collection-panel>div{width:48%;max-width:180px}
+  .collection-panel p{font-size:.5rem}
+  .collection-panel h3{font-size:clamp(1.55rem,7vw,2.2rem);line-height:.92;margin:.5rem 0}
+  .collection-panel small{font-size:.58rem}
+  .collection-panel img{width:55%;height:88%;right:-1%;bottom:-2%;object-fit:contain;object-position:center bottom}
+  .collection-panel>b{font-size:24vw;bottom:.02em}
+  .story-ribbon{font-size:1rem;padding:.8rem 0}
+}
+/* Conversion controls should support the scene, not cover it. */
+@media(max-width:620px){
+  .mobile-action-bar a{min-height:42px;padding:.28rem .25rem;font-size:.62rem}
+  .has-mobile-action-bar{padding-bottom:42px}
+}
